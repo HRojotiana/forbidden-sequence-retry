@@ -122,7 +122,7 @@
             appendLine('\nForbidden...');
 
             AwsWafCaptcha.renderCaptcha(container, {
-                apiKey: process.env.WAF_API_KEY,
+                apiKey: window.WAF_API_KEY,
                 onSuccess: captchaSuccessFunction,
                 onError: captchaErrorFunction,
             });
